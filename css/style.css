@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none; /* pra tirar o ponto do ul*/
+}
+
+body {
+    background-color: #faf6ed;
+    color: #222;
+    -webkit-font-smoothing: antialiased; /* pra deixar a fonte mais limpa */
+    display: grid; /* pra fazer um elemento virar um grid */
+    grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr; /* pra definir o tamanho e quntas colunas vai ter seu templeite */
+}
+
+.menu {
+    grid-column: 3 / 5; /* pra posicionar o elemento da coluna que voce quer */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #fb5;
+}
+
+.menu ul {
+    display: flex; /* pra colocar um elemento do lado do outro */
+    flex-wrap: wrap; /* para o texto quebrar quando nao couber mais na tela */
+    padding: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #222;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase; /* colocae todas as letreas maiusculas */
+    font-size: 0.875rem;
+    letter-spacing: .1em; /* um espaço a cada letra */
+}
+
+.grid-section {
+    grid-column: 2 / 4;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 90px 300px 1fr;
+    grid-gap: 20px; /* uma distancia entre cada coluna de grid */
+    margin-bottom: 4rem;
+}
