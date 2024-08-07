@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
 * {
     margin: 0px;
@@ -57,4 +58,43 @@ body {
     grid-template-columns: 90px 300px 1fr;
     grid-gap: 20px; /* uma distancia entre cada coluna de grid */
     margin-bottom: 4rem;
+}
+
+.titulo {
+    font-family: "Playfair Display SC";
+    font-size: 6rem;
+    line-height: 1; /* espaço de uma linha pra outra */
+    font-weight: normal;
+    margin-bottom: 1rem;
+    grid-column: 1 / 4;
+}
+
+.animais h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: 1rem;
+    color: #e54;
+}
+
+.animais h2::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: #fb5;
+}
+
+.animais p {
+    font-family: helvetica, Arial;
+    line-height: 1.2;
+    margin: 1rem;
+}
+
+.animais-lista {
+    height: 370px;
+    overflow-y: scroll;
+    grid-column: 2;
 }
